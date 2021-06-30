@@ -1,0 +1,48 @@
+.button {
+  max-width: 250px;
+  max-height: 65px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.35s ease-in-out;
+  border-radius: 7px;
+}
+.button span {
+  font-size: 18px;
+}
+.button__header {
+  background-color: #fff;
+  border: 2px solid #B22222;
+  width: 210px;
+  height: 55px;
+}
+.button__header span {
+  color: #B22222;
+}
+.button__header:hover {
+  background-color: #B22222;
+}
+.button__header:hover span {
+  color: #fff;
+}
+.button__header:active {
+  transform: translateY(5px);
+}
+.button__login {
+  background-color: #fff;
+  border: 2px solid #B22222;
+  width: 250px;
+  height: 65px;
+}
+.button__login span {
+  color: #B22222;
+}
+.button__login:hover {
+  background-color: #B22222;
+}
+.button__login:hover span {
+  color: #fff;
+}
+.button__login:active {
+  transform: translateY(5px);
+}
+/*# sourceMappingURL=button.css.map */

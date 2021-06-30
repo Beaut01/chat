@@ -1,0 +1,20 @@
+.chat {
+  display: flex;
+  width: 100%;
+}
+.chat__messages {
+  margin: 0;
+  width: 1140px;
+}
+.chat__input {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+.chat__input input {
+  width: 79%;
+  padding: 20px 10px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=chat.css.map */

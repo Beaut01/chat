@@ -1,0 +1,23 @@
+@import '../../variables/variables.less';
+@import '../../mixins/mixins.less';
+
+.button{
+    max-width: 250px;
+    max-height: 65px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.35s ease-in-out;
+    border-radius: 7px;
+
+    span{
+        font-size: 18px;
+    }
+
+    &__header{
+        .button(210px, 55px)
+    }
+
+    &__login{
+        .button(250px, 65px)
+    }
+}

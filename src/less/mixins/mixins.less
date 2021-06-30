@@ -1,0 +1,22 @@
+.button(@width, @heigth) {
+    background-color: #fff;
+    border: 2px solid @red;
+    width: @width;
+    height: @heigth;
+
+    span{
+        color: @red;
+    }
+
+    &:hover{
+        background-color: @red;
+        
+        span{
+            color: #fff;
+        }
+    }
+
+    &:active{
+        transform: translateY(5px);
+    }
+}
