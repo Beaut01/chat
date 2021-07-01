@@ -18,7 +18,7 @@ firebase.initializeApp({
 })
 
 const auth = firebase.auth()
-const store = firebase.firestore()
+const firestore = firebase.firestore()
 
 export const Context = createContext(null)
 
@@ -27,7 +27,7 @@ function App() {
     <Context.Provider value={{
       firebase, 
       auth,
-      store
+      firestore
     }}>
       <BrowserRouter>
         <Header />

@@ -22,4 +22,14 @@
   max-width: 1140px;
   margin: auto;
 }
+@media (max-width: 1140px) {
+  .container {
+    max-width: 920px;
+  }
+}
+@media (max-width: 920px) {
+  .container {
+    max-width: 768px;
+  }
+}
 /*# sourceMappingURL=header.css.map */
