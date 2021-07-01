@@ -3,10 +3,16 @@ import { Context } from '../App'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import firebase from 'firebase'
 
+/**
+ * Функция, которая отрисовывает Header  
+ * @returns JSX.Element
+ */
 export const Header = () => {
     const {auth} = useContext(Context)
-    const [user, loading, error] = useAuthState(auth) 
-
+    const [user] = useAuthState(auth) 
+    /**
+     * Функция выхода из чата
+     */
     const logout = () => {
         firebase.auth().signOut()
     }

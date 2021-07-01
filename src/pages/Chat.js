@@ -6,6 +6,10 @@ import firebase from 'firebase'
 
 import { Message } from '../components/Message'
 
+/**
+ * Отрисовывает блок чата.
+ * @returns JSX.Element
+ */
 export const Chat = () => {
     const [value, setValue] = useState('')
 
@@ -14,11 +18,12 @@ export const Chat = () => {
     const [messages, loading] = useCollectionData(
         firestore.collection('messages').orderBy('createdAt')
     )
-
-    console.log(messages);
-
+    
+    /**
+     * Асинхронная функция отправки сообщения в firebase, также обнуляется стейт инпута.
+     */
     const sendMessage = async () => {
-        if(value != ''){
+        if(value !== ''){
             firestore.collection('messages').add({
                 id: user.uid,
                 name: user.displayName,

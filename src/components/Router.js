@@ -6,6 +6,10 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import { Chat } from '../pages/Chat'
 import { Login } from '../pages/Login'
 
+/**
+ * Функция, осуществляющая роутинг
+ * @returns JSX.Element
+ */
 export const Router = () => {
     const {auth} = useContext(Context)
     const [user] = useAuthState(auth)
