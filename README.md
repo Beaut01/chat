@@ -1,7 +1,7 @@
 # Ссылка на приложение: https://chat-e3361.web.app
 
 # Chat
-## Simple chat with authorization with gmail
+Simple chat with authorization with gmail
 
 ## Required scripts
 ### `npm start` 
